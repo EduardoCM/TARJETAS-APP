@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'tarjetas-app';
+ 
+  title = 'Administracion de tarjetas digitales';
+  autor = 'Eduardo Castillo Mendoza';
+  curso = 'Java Cloud API Developer - Dia 2'
+
+  
 }
