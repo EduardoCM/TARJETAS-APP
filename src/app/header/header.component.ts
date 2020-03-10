@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-    curso = "Java Cloud API Developer";
+    curso = "Java Cloud API Developer - Dia 2";
+    inicio = "Administracion";
+    
 }

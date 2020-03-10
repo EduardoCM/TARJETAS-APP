@@ -1,7 +1,7 @@
 <div cclass="card border-primary mb-3">
-    <div class="card-header">Tarjetas</div>
+    <div class="card-header">Tarjetas Registradas</div>
     <div class="card-body">
-        <h5 class="card-title">Tarjetas activas</h5>
+        <h5 class="card-title"></h5>
 
         <table class="table table-bordered table-striped">
 
@@ -11,9 +11,8 @@
                     <th>Titular</th>
                     <th>Entidad</th>
                     <th>Numero</th>
-                    <th>Fecha Cauducidad</th>
                     <th>Marca</th>
-                    <th>CVV</th>
+                    <th>Fecha Cauducidad</th>
                 </tr>
             </thead>
 
@@ -23,9 +22,8 @@
                     <td>{{ tarjeta.nombreTitular}}</td>
                     <td>{{ tarjeta.nombreEntidad}}</td>
                     <td>{{ tarjeta.numeroTarjeta}}</td>
-                    <td>{{ tarjeta.cvv}}</td>
-                    <td>{{ tarjeta.fechaCaudicidad}}</td>
                     <td>{{ tarjeta.marca}}</td>
+                    <td>{{ tarjeta.fechaCaudicidad}}</td>
                 </tr>
             </tbody>
         </table>

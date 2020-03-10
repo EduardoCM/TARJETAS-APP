@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarjeta } from './tarjeta';
-import { TARJETAS } from './tarjetas.json';
+import { TarjetaService } from './tarjeta.service';
+
 
 @Component({
   selector: 'app-tarjetas',
@@ -8,13 +9,17 @@ import { TARJETAS } from './tarjetas.json';
 })
 export class TarjetasComponent implements OnInit {
 
+  
 
   tarjetas: Tarjeta[];
 
-  constructor() { }
+  constructor(private tarjetaService: TarjetaService) { }
 
   ngOnInit(): void {
-    this.tarjetas = TARJETAS;
+    this.tarjetaService.getTarjetas().subscribe(
+      tarjetas => this.tarjetas = tarjetas
+    );
   }
+
 
 }
